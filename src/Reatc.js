@@ -194,7 +194,7 @@ function updateFunctionComponent(fiber) {
   reconcileChildren(fiber, children)
 }
   
-function useState(initial) {
+export function useState(initial) {
   const oldHook =
     wipFiber.alternate &&
     wipFiber.alternate.hooks &&
